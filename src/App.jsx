@@ -1,11 +1,10 @@
-import AddData from "./Components/AddData"
-import Detection from "./Components/Detection"
+import { RouterProvider } from "react-router-dom"
+import { routes } from "../routes/index"
 
 const App = () => {
   return (
     <>
-      <Detection/>
-      <AddData/>
+      <RouterProvider router={routes} />
     </>
   )
 }

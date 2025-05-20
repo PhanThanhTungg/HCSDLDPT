@@ -1,0 +1,29 @@
+@layer components {
+  h1 {
+    @apply text-[32px] font-semibold text-gray-950 mb-5
+  }
+
+  .h2, h2 {
+    @apply text-[18px] font-medium text-gray-900 mb-5
+  }
+
+  button {
+    @apply cursor-pointer
+  }
+
+  button:disabled {
+    @apply cursor-default
+  }
+
+  .container-custom {
+    @apply container mx-auto px-4;
+  }
+
+  .inner-image {
+    @apply w-[200px] rounded-lg overflow-hidden flex justify-center items-center;
+  }
+
+  .inner-image img {
+    @apply aspect-[3/4] object-cover w-full;
+  }
+}
